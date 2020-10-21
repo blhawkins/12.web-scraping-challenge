@@ -68,8 +68,11 @@ def scrape():
     #Format the table
     mars_facts.rename(columns = {0: '', 1: 'Mars'}, inplace = True)
 
-    #Export the table to an HTML file
-    mars_facts.to_html('Resources//mars_facts.html', index = False, header = True)
+    #Export the table to an HTML string
+    mars_html_table = mars_facts.to_html(index = False, header = True)
+
+    #Save the mars_html_table string to the scraped_data dictionary
+    scraped_data['mars_html_table'] = mars_html_table
     
     #---------------Divider---------------#
     
@@ -122,5 +125,3 @@ def scrape():
     browser.quit()
     
     return scraped_data
-
-print(scrape())
