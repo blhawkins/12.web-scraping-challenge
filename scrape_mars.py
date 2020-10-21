@@ -28,8 +28,8 @@ def scrape():
     soup = bs(html, "html.parser")
 
     #Use the find function to find the most recent news title and description.
-    news_title = soup.find('', class_ = 'list_text').find('a').get_text()
-    news_text = soup.find('', class_ = 'article_teaser_body').get_text()
+    news_title = soup.find('div', class_ = 'list_text').find('a').get_text()
+    news_text = soup.find('div', class_ = 'article_teaser_body').get_text()
     
     #Save the news title and description to the scraped_data dictionary
     scraped_data['news_title'] = news_title
@@ -46,9 +46,9 @@ def scrape():
     html = browser.html
     soup = bs(html, "html.parser")
 
-    #Use the find function to find the featured image URL
-    featured_image_tag = soup.find('', class_ = 'button fancybox')['data-fancybox-href']
-    featured_image_url = f'https://www.jpl.nasa.gov/{featured_image_tag}'
+    #Use the find function to find and create the featured image URL
+    featured_image_tag = soup.find('a', class_ = 'button fancybox')['data-fancybox-href']
+    featured_image_url = f'https://www.jpl.nasa.gov{featured_image_tag}'
     
     #Save the featured_image_url to the scraped_data dictionary
     scraped_data['featured_image_url'] = featured_image_url
@@ -101,8 +101,8 @@ def scrape():
         inner_soup = bs(inner_html, "html.parser")
     
         #Collect the image tag and title from each hemisphere's web page
-        hemisphere_image_tag = inner_soup.find('', class_ = 'wide-image')['src']
-        hemisphere_title = inner_soup.find('', class_ = 'title').get_text()
+        hemisphere_image_tag = inner_soup.find('img', class_ = 'wide-image')['src']
+        hemisphere_title = inner_soup.find('h2', class_ = 'title').get_text()
     
         #Form full image URL for each hemisphere
         hemisphere_image_url = f'{base_url}{hemisphere_image_tag}'
@@ -122,3 +122,5 @@ def scrape():
     browser.quit()
     
     return scraped_data
+
+print(scrape())
