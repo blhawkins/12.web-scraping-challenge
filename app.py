@@ -11,7 +11,7 @@ mongo = PyMongo(app, uri='mongodb://localhost:27017/mars_app')
 @app.route('/')
 def index():
     #Find one record of data from the Mongo database
-    scraped_data = mongo.db.scraped_data.find()
+    scraped_data = mongo.db.scraped_data.find_one()
     return render_template('index.html', scraped_data = scraped_data)
 
 #Route that initiates the scraping process
