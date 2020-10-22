@@ -10,7 +10,7 @@
     <meta charset = 'UTF-8'>
 
     <title>Mission to Mars</title>
-    
+
     <style>
       #buffer_row{
       height: 25px;
@@ -61,7 +61,7 @@
           <div class = col-lg-6>
             <h2>Mars Facts</h2>
             <div class = 'table table-striped table-responsive'>
-              {{scraped_data.mars_html_table}}
+              {{scraped_data.mars_html_table | safe}} 
             </div>
           </div>
         </div>
