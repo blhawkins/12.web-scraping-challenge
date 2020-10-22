@@ -29,5 +29,7 @@ The initial objective of this project is to use Beautiful Soup, Splinter, and Pa
 Following the successful retrieval of this information, it was passed into app.py, a python-based Flask server. Within this Flask application, the information was successfully passed into a local MongoDB database through the use of PyMongo. The information housed in the Mongo database was then queried and combined with the index.html template file to create a Flask-based webpage visualizing the information.
 
 #### Screenshots:
-
-
+![alt text](https://github.com/blhawkins/12.web-scraping-challenge/blob/main/Screenshots/screenshot1.png 'Screenshot 1 [Top of Page]')
+![alt text](https://github.com/blhawkins/12.web-scraping-challenge/blob/main/Screenshots/screenshot2.png 'Screenshot 2')
+![alt text](https://github.com/blhawkins/12.web-scraping-challenge/blob/main/Screenshots/screenshot3.png 'Screenshot 3')
+![alt text](https://github.com/blhawkins/12.web-scraping-challenge/blob/main/Screenshots/screenshot4.png 'Screenshot 4 [Bottom of Page]')
