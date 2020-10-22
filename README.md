@@ -26,9 +26,9 @@ The initial objective of this project is to use Beautiful Soup, Splinter, and Pa
 3. A table detailing Mars's planet profile is scraped from the [Space-Facts.com website](https://space-facts.com/mars/).
 4. Photos of Mars's four hemispheres are taken from the [USGS Astropedia website](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars).
 
-Following the successful retrieval of this information, it was passed into app.py, a python-based Flask server. Within this Flask application, the information was successfully passed into a local MongoDB database through the use of PyMongo. The information housed in the Mongo database was then queried and combined with the index.html template file to create a Flask-based webpage visualizing the information.
+Following the successful retrieval of this information, it was passed into app.py, a python-based Flask server. Within this Flask application, the information was successfully passed into a local MongoDB database through the use of PyMongo. The information housed in the Mongo database was then queried and combined with the index.html template file to create a Flask-based webpage visualizing the information. Through the use of multiple routes within the Flask application, the website is able to be manually refreshed in order to pull real-time information.
 
-#### Screenshots:
+#### Screen Capture:
 ![alt text](https://github.com/blhawkins/12.web-scraping-challenge/blob/main/Screenshots/screenshot1.png 'Screenshot 1 [Top of Page]')
 ![alt text](https://github.com/blhawkins/12.web-scraping-challenge/blob/main/Screenshots/screenshot2.png 'Screenshot 2')
 ![alt text](https://github.com/blhawkins/12.web-scraping-challenge/blob/main/Screenshots/screenshot3.png 'Screenshot 3')
