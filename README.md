@@ -1,6 +1,6 @@
 # The Red Planet
 ### Web-Scraping Martian Facts 🚀 🔭
-University of Kansas Data Analytics Bootcamp Homework Assignment 12
+
 
 # Main Contents:
     mission_to_mars.ipynb
