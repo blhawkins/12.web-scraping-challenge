@@ -20,7 +20,7 @@ University of Kansas Data Analytics Bootcamp Homework Assignment 12
 
 # Description:
 
-The initial objective of this project is to use Beautiful Soup, Splinter, and Pandas to scrape a variety of data types from a set of Mars-themed websites. This procedure was carried out in the (mission_to_mars.ipynb)[https://github.com/blhawkins/theRedPlanet/blob/main/mission_to_mars.ipynb] file, which was then converted into the (scrape_mars.py)[https://github.com/blhawkins/theRedPlanet/blob/main/scrape_mars.py] file. As can be seen in the Mission to Mars Jupyter Notebook, the following data was successfully targeted and scraped.
+The initial objective of this project is to use Beautiful Soup, Splinter, and Pandas to scrape a variety of data types from a set of Mars-themed websites. This procedure was carried out in the [mission_to_mars.ipynb](https://github.com/blhawkins/theRedPlanet/blob/main/mission_to_mars.ipynb) file, which was then converted into the [scrape_mars.py](https://github.com/blhawkins/theRedPlanet/blob/main/scrape_mars.py) file. As can be seen in the Mission to Mars Jupyter Notebook, the following data was successfully targeted and scraped.
 1. The most recent article is taken from the [NASA Mars Exploration Program's website](https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest).
 2. The featured image is taken from the [NASA Jet Propulsion Laboratory website](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars).
 3. A table detailing Mars's planet profile is scraped from the [Space-Facts.com website](https://space-facts.com/mars/).
